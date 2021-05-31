@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Traveling App</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+  <div class="top">
+    <h1>Susiruošei keliauti?</h1>
+  </div>
+  <section class="wrapper">
+
+
+
+    <div class="intro">
+      <p>Ši programėlė padės tau susiplanuoti kelionę pėščiomis, padės susiruošti reikiamus daiktus kelionei!</p>
+    </div>
+
+    <form id="myForm">
+      <div class="dateSelectorDiv">
+        <div class="input">
+          <label for="departure">
+            <p>Kada išvyksti:</p>
+          </label>
+          <input type="date" id="value1" name="departure">
+        </div>
+        <div class="input">
+          <label for="arrival">
+            <p>Kada Grįžti:</p>
+          </label>
+          <input type="date" id="value2" name="arrival">
+        </div>
+      </div>
+
+      <button type="button" id="calc">Sužinok!</button>
+      <p class="getDate"></p>
+    </form>
+
+    <section class="result">
+      <p><b>Tu keliausi: </b></p>
+      <p id="metai"></p>
+      <p id="mėnesiai"></p>
+      <p id="dienos"></p>
+
+
+
+    </section>
+    <section class="resultText">
+      <p><b>Į kelionę patarčiau pasiimti šiuos daiktus:</b>
+      <p id="daiktai"></p>
+      </p>
+    </section>
+
+
+  </section>
+  <script src="js/mainScript.js"></script>
+</body>
+
+</html>
